@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+  </head>
+  <body class="m-8">
+    <a href="#principal" class="sr-only focus:not-sr-only"
+      >Pular para o conteúdo</a
+    >
+    <nav class="mb-96">
+      <button id="menuButton" class="bg-purple-300 px-4 py-2">Menu</button>
+      <ul id="menu" class="invisible">
+        <li>Produtos</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+    <p id="principal">Meu Conteúdo</p>
+    <script>
+      menuButton?.addEventListener('click', () => {
+        menu?.classList.toggle('invisible');
+      });
+    </script>
+
+    <!-- <a href="/" class="bg-blue-200 py-2 px-4 inline-block">Contato</a>
+    <a href="/" class="bg-blue-200 py-2 px-4 inline-block88">Sobre</a>
+    <p class="bg-purple-200 py-2 px-4">Saiba Mais</p> -->
+  </body>
+</html>
