@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind</title>
+  </head>
+  <body class="m-8">
+    <div class="grid gap-4">
+      <h2 class="font-bold tracking-widest">ESCOLHA A SUA</h2>
+      <div>
+        <input
+          class="peer mr-1"
+          type="radio"
+          name="produto"
+          value="nimbus"
+          id="nimbus"
+        />
+        <label
+          for="nimbus"
+          class="inline-grid grid-cols-[200px_auto] hover:bg-slate-300 bg-gray-200 rounded-md justify-between p-2 peer-checked:bg-slate-400 cursor-pointer"
+        >
+          Nimbus Stark
+          <span>R$ 4999</span>
+        </label>
+        <ul
+          class="mt-2 rounded-md bg-gray-300 ml-5 p-2 hidden peer-checked:block"
+        >
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>50 km/h</li>
+          <li>Rastreador</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
